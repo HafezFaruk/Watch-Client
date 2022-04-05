@@ -53,7 +53,7 @@ export default function Reviews() {
   const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
-    fetch(`https://agile-plains-53305.herokuapp.com/reviews`)
+    fetch(`https://nameless-fjord-11259.herokuapp.com/reviews`)
       .then((res) => res.json())
       .then((data) => setReviews(data));
   }, [reviews]);

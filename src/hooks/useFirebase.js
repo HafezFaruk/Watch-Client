@@ -105,7 +105,7 @@ const useFirebase = () => {
   }, [auth]);
 
   useEffect(() => {
-    fetch(`https://agile-plains-53305.herokuapp.com/admin/${user?.email}`)
+    fetch(`https://nameless-fjord-11259.herokuapp.com/admin/${user?.email}`)
       .then((res) => res.json())
       .then((data) => {
         if (data[0]?.role === "admin") {
@@ -134,7 +134,7 @@ const useFirebase = () => {
   // Save user information to database
   const saveUser = (email, displayName, method) => {
     const user = { email, displayName };
-    fetch("https://agile-plains-53305.herokuapp.com/users", {
+    fetch("https://nameless-fjord-11259.herokuapp.com/users", {
       method: method,
       headers: {
         "Content-Type": "application/json",

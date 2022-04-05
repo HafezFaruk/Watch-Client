@@ -22,7 +22,7 @@ const ExploreWatches = () => {
   }, []);
 
   useEffect(() => {
-    fetch(`https://agile-plains-53305.herokuapp.com/products`)
+    fetch(`https://nameless-fjord-11259.herokuapp.com/products`)
       .then((res) => res.json())
       .then((data) => setProducts(data.products));
   }, []);
@@ -71,7 +71,7 @@ const ExploreWatches = () => {
                     variant="body1"
                     sx={{ py: 2, fontWeight: "bold" }}
                   >
-                    ৳{product.price}
+                    ${product.price}
                   </Typography>
                   <CustomButton onClick={() => handleBuyNow(product._id)}>
                     <i className="fas fa-shopping-cart"></i> &nbsp; Buy Now

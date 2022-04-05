@@ -15,7 +15,7 @@ const Watches = () => {
   const history = useHistory();
 
   useEffect(() => {
-    fetch(`https://agile-plains-53305.herokuapp.com/products?size=6`)
+    fetch(`https://nameless-fjord-11259.herokuapp.com/products?size=6`)
       .then((res) => res.json())
       .then((data) => {
         setProducts(data.products);
@@ -60,7 +60,7 @@ const Watches = () => {
                   {product.name}
                 </Typography>
                 <Typography variant="body1" sx={{ py: 2, fontWeight: "bold" }}>
-                  ৳{product.price}
+                  $ {product.price}
                 </Typography>
                 <CustomButton onClick={() => handleBuyNow(product._id)}>
                   <i className="fas fa-shopping-cart"></i> &nbsp; Buy Now

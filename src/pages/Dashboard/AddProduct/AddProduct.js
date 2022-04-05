@@ -19,7 +19,7 @@ const AddProduct = () => {
 
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
-    fetch("https://agile-plains-53305.herokuapp.com/products", {
+    fetch("https://nameless-fjord-11259.herokuapp.com/products", {
       method: "POST",
       headers: {
         "content-type": "application/json",

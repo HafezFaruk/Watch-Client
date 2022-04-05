@@ -38,7 +38,7 @@ const Purchase = () => {
       status: "Pending",
     };
 
-    fetch("https://agile-plains-53305.herokuapp.com/orders", {
+    fetch("https://nameless-fjord-11259.herokuapp.com/orders", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -55,7 +55,7 @@ const Purchase = () => {
   };
 
   useEffect(() => {
-    fetch(`https://agile-plains-53305.herokuapp.com/products/${id}`)
+    fetch(`https://nameless-fjord-11259.herokuapp.com/products/${id}`)
       .then((response) => response.json())
       .then((data) => setProduct(data));
   }, [id]);
@@ -93,7 +93,7 @@ const Purchase = () => {
                   </Typography>
                   <hr />
                   <Typography variant="subtitle1">
-                    <span style={{ fontWeight: "bold" }}> Price: </span>৳
+                    <span style={{ fontWeight: "bold" }}> Price: </span>$
                     {product.price}
                   </Typography>
                   <hr />

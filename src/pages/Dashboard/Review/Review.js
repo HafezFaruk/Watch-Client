@@ -20,7 +20,7 @@ const Review = () => {
       email: user.email,
     };
 
-    fetch("https://agile-plains-53305.herokuapp.com/reviews", {
+    fetch("https://nameless-fjord-11259.herokuapp.com/reviews", {
       method: "POST",
       headers: {
         "content-type": "application/json",
