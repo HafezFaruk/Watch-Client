@@ -39,7 +39,7 @@ const Watches = () => {
           sx={{
             py: 3,
             fontWeight: "bold",
-            color: "#e74c3c",
+            color: "#000000",
           }}
         >
           Our Featured Watches
@@ -72,7 +72,7 @@ const Watches = () => {
 
         <Box sx={{ textAlign: "center", pt: 2 }}>
           <NavLink to="/exploreWatches" style={{ textDecoration: "none" }}>
-            <CustomButton sx={{ backgroundColor: "#3867D6", px: 10 }}>
+            <CustomButton sx={{ backgroundColor: "#000", px: 10 }}>
               Explore More
             </CustomButton>
           </NavLink>

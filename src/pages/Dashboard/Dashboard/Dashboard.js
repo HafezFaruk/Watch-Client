@@ -22,7 +22,7 @@ import AllOrders from "../AllOrders/AllOrders";
 import ManageProducts from "../ManageProducts/ManageProducts";
 import AddProduct from "../AddProduct/AddProduct";
 import AdminRoute from "../../Login/AdminRoute/AdminRoute";
-
+import Logo from "../../../images/logo.png";
 const style = {
   textDecoration: "none",
   fontSize: "1rem",
@@ -181,7 +181,7 @@ function ResponsiveDrawer(props) {
         sx={{
           width: { sm: `calc(100% - ${drawerWidth}px)` },
           ml: { sm: `${drawerWidth}px` },
-          backgroundColor: "#3867D6",
+          backgroundColor: "#000",
         }}
       >
         <Toolbar>
@@ -195,8 +195,9 @@ function ResponsiveDrawer(props) {
             <MenuIcon />
           </IconButton>
           <img
-            width="60px"
-            src="https://classicwatchny.com/wp-content/uploads/2016/03/clwa_logo_final-01.jpg"
+            width="180px"
+            height="50px"
+            src={Logo}
             alt=""
           />
           &nbsp;
@@ -210,7 +211,7 @@ function ResponsiveDrawer(props) {
         sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
         aria-label="mailbox folders"
       >
-        {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
+       
         <Drawer
           container={container}
           variant="temporary"

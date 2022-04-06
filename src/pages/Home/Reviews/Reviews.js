@@ -63,7 +63,7 @@ export default function Reviews() {
       <Typography
         variant="h4"
         align="center"
-        sx={{ py: 3, fontWeight: "bold", color: "#e74c3c" }}
+        sx={{ py: 3, fontWeight: "bold", color: "#000000" }}
       >
         Our Reviews
       </Typography>

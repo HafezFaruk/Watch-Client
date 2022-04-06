@@ -52,7 +52,7 @@ const AddProduct = () => {
                 width: "100%",
                 textAlign: "center",
                 fontWeight: "bold",
-                color: "#e74c3c",
+                color: "#000000",
               }}
             >
               Add Product

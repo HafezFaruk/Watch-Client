@@ -40,7 +40,7 @@ const ExploreWatches = () => {
           <Typography
             variant="h4"
             align="center"
-            sx={{ py: 5, fontWeight: "bold", color: "#e74c3c" }}
+            sx={{ py: 5, fontWeight: "bold", color: "#000000" }}
           >
             EXPLORE OUR WATCHES
           </Typography>

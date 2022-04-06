@@ -2,16 +2,17 @@ import React from "react";
 import { MuiNavbar, NavItem } from "mui-navbar";
 import CustomButton from "../../StyledComponents/CustomButton";
 import useAuth from "../../hooks/useAuth";
-
+import Logo from "../../images/logo.png"
 const Navigation = () => {
   const { user, logout } = useAuth();
   return (
     <MuiNavbar
-      background="#3867d6"
+      background="#000"
       height="70px"
       navItemPosition="right"
       togglerColor="#fff"
-      logo="https://classicwatchny.com/wp-content/uploads/2016/03/clwa_logo_final-01.jpg"
+      logo={Logo}
+      
     >
       <NavItem to="/home">Home</NavItem>
       <NavItem to="/exploreWatches">Explore Watches</NavItem>

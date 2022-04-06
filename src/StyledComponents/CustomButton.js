@@ -2,7 +2,7 @@ import { styled } from "@mui/system";
 import Button from "@mui/material/Button";
 
 const CustomButton = styled(Button)({
-  background: "#e74c3c",
+  background: "#000000",
   color: "#fff",
   padding: "10px 15px",
   "&:hover": {

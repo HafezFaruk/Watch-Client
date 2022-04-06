@@ -5,15 +5,22 @@ import {
   ListItemText,
   Typography,
   Box,
+  
 } from "@mui/material";
+
+
 import React from "react";
 import { makeStyles } from "@mui/styles";
 import { NavLink } from "react-router-dom";
+import Logo from "../../images/logo1.png"
+import CustomButton from "../../StyledComponents/CustomButton.js";
+
+
 
 const useStyle = makeStyles({
   footerStyle: {
     width: "100%",
-    backgroundColor: "#3867d6",
+    backgroundColor: "#fff",
     marginTop: "10px",
     paddingTop: "10px",
   },
@@ -23,64 +30,91 @@ const useStyle = makeStyles({
   },
 
   icon: {
-    color: "#fff",
+    color: "#000",
     paddingRight: "10px",
     fontSize: "30px",
   },
-});
+  subscribe: {
+    margin: "20px 0",
+    width: "100%",
+    display: "block",
+  },
+  input: {
+    padding: "10px 5px",
+  },
+  button: {
+    padding: "8px 10px",
+    backgroundColor: "#000",
+    color: "#fff",
+    border: "none",
+  },
+ 
+})
 
 const Footer = () => {
-  const { footerStyle, icons, icon } = useStyle();
+  const { footerStyle, icons, icon, input, button, subscribe } =
+    useStyle();
   return (
     <footer className={footerStyle}>
+      <hr />
       <Container>
-        <Grid container spacing={6} sx={{ color: "#fff" }}>
-          <Grid item xs={12} sm={12} md={6} lg={3}>
+        <Grid container spacing={6} sx={{ color: "#000" }}>
+          <Grid item xs={12} sm={12} md={6} lg={4}>
             <List>
-              <ListItemText sx={{ mb: 1, fontWeight: "bold" }}>
-                ABOUT US
+              <img style={{ width: "200px" }} src={Logo} alt="Logo" srcset="" />
+
+              <ListItemText>
+                Watch Limited, a retail and distribution house, with this the
+                concept started its journey in the year 2010 as a small entity.
+                Keep subscribing to get various information on our website
               </ListItemText>
-              <ListItemText sx={{ textAlign: "justify" }}>
-                Classic Watch Limited, a retail and a distribution house, with
-                this concept started its journey in the year 2012 as a small
-                entity in this country under one of the biggest conglomerates to
-                be the sole enterprises to cater the world famous BRANDS of
-                watches and accessories for easy access to the residents and
-                citizen of Bangladesh.
-              </ListItemText>
+
+              <div className={subscribe}>
+                <input
+                  className={input}
+                  type="email"
+                  name=""
+                  id=""
+                  placeholder="example@gmail.com"
+                />
+                <CustomButton className={button}> &nbsp; SUBSCRIBE</CustomButton>
+              </div>
             </List>
           </Grid>
-          <Grid item xs={12} sm={12} md={6} lg={3}>
+          <Grid item xs={12} sm={12} md={6} lg={2}>
             <List>
               <ListItemText sx={{ mb: 1, fontWeight: "bold" }}>
-                HELP CENTER
+                QUICK LINKS
               </ListItemText>
-              <ListItemText>Contact Us</ListItemText>
+              <ListItemText>Search</ListItemText>
               <ListItemText>Privacy Policy</ListItemText>
               <ListItemText>Warranty Information</ListItemText>
+              <ListItemText>Shipping</ListItemText>
+              <ListItemText>Help Information</ListItemText>
+              <ListItemText>Policy Details</ListItemText>
             </List>
           </Grid>
           <Grid item xs={12} sm={12} md={6} lg={3}>
             <List>
               <ListItemText sx={{ mb: 1, fontWeight: "bold" }}>
-                ACCOUNT
+                CUSTOMER SERVICE
               </ListItemText>
               <ListItemText>My Account</ListItemText>
               <ListItemText>Orders</ListItemText>
               <ListItemText>Cart</ListItemText>
               <ListItemText>Wishlist</ListItemText>
-              <ListItemText>Log Out</ListItemText>
+              <ListItemText>About Us</ListItemText>
+              <ListItemText>Refunds & Returns</ListItemText>
             </List>
           </Grid>
           <Grid item xs={12} sm={12} md={6} lg={3}>
             <List>
               <ListItemText sx={{ mb: 1, fontWeight: "bold" }}>
-                CORPORATE ADDRESS
+                CONTACT US
               </ListItemText>
-              <ListItemText>
-                Union Center, 68/1, Gulshan Avenue, Dhaka, Bangladesh Phone:
-                01713199299 Email: info@classicwatch.com
-              </ListItemText>
+              <ListItemText>Address: Dhaka, Bangladesh</ListItemText>
+              <ListItemText>Phone: 01303202518</ListItemText>
+              <ListItemText>Email: info@watch.com</ListItemText>
             </List>
             <ListItemText sx={{ mt: 1, fontWeight: "bold" }}>
               FOLLOW US
@@ -104,12 +138,12 @@ const Footer = () => {
             </Box>
           </Grid>
         </Grid>
+
         <Typography
-          sx={{ textAlign: "center", py: 4, color: "#fff" }}
+          sx={{ textAlign: "center", py: 5, color: "#000" }}
           variant="subtitle1"
         >
-          Copyright Classic Watch &copy; {new Date().getFullYear()} All Rights
-          Reserved
+          Watch &copy; {new Date().getFullYear()} All Rights Reserved
         </Typography>
       </Container>
     </footer>
